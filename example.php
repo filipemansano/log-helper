@@ -1,8 +1,9 @@
 <?php
 
 require 'vendor/autoload.php';
+use FilipeMansano\Log;
 
-$log = \FilipeMansano\Log::getInstance();
+$log = Log::getInstance();
 
 $log->printMessage("This is a simple text");
 $log->printMessage("----------------------");
