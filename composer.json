@@ -1,0 +1,16 @@
+{
+    "name": "filipemansano/log-helper",
+    "description": "helper to display and manipulate messages in console with php",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "filipemansano",
+            "email": "filipemansano@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "FilipeMansano\\": "src"
+        }
+    }
+}
