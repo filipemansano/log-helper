@@ -12,6 +12,7 @@
 namespace FilipeMansano;
 
 use Exception;
+use ReflectionClass;
 
 class Log
 {
