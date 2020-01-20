@@ -36,3 +36,17 @@ $log->printMessage("----------------------");
 ```
 ### output
 ![Image of output](https://i.imgur.com/peasodT.png)
+
+
+## Replace Text in console
+you can replace the last text printed with another, a comum case is display percent of loading, e.g.
+
+```php
+for ($i=1; $i <= 100; $i++) {   
+    $log->printMessage("Text replace ({$i}%)", Log::FOREGROUND_WHITE, Log::BACKGROUND_BLACK, Log::REPLACE_LAST_MESSAGE);
+    usleep(50000);
+}
+
+$log->printMessage("Text replace ", Log::FOREGROUND_WHITE, Log::BACKGROUND_BLACK, Log::REPLACE_LAST_MESSAGE);
+$log->printMessage("[DONE]", Log::FOREGROUND_GREEN);
+```
