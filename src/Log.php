@@ -131,7 +131,8 @@ class Log
         }
 
         if($breakLines === self::REPLACE_LAST_MESSAGE && $this->lastMessagePrinted != ""){
-            echo str_repeat(chr(8), strlen($this->lastMessagePrinted));
+            $size = strlen($this->lastMessagePrinted);
+            echo "\033[{$size}D";
         }
         
         $this->lastMessagePrinted = "\e[{$foregroundColor};{$backgroundColor}m{$msg}\e[0m";
