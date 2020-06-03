@@ -121,7 +121,7 @@ class Log
         $this->printMessage("{$blankLine}", self::FOREGROUND_WHITE, self::BACKGROUND_RED);
     }
 
-    public function printMessage(string $msg, string $foregroundColor = self::FOREGROUND_WHITE, int $backgroundColor = self::BACKGROUND_BLACK, int $breakLines = 1){
+    public function printMessage(string $msg, string $foregroundColor = self::FOREGROUND_WHITE, string $backgroundColor = self::BACKGROUND_BLACK, int $breakLines = 1){
         if (!in_array($foregroundColor, $this->colorsAvaliables["FOREGROUND"])) {
             $foregroundColor = self::FOREGROUND_WHITE;
         }
